@@ -11,12 +11,13 @@ public class MainGui : MonoBehaviour
 
     private float _sliderValue = 0;
     private float _redColorValue = 0;
-    private float _greenColorValue;
+    private float _greenColorValue = 0;
     private float _blueColorValue = 0;
     private Rect windowRect = new Rect (Screen.width * 0.33f, Screen.height * 0.3f, 330, 300);
 
     public void OnGUI()
     {
+
         if (GUI.Button(new Rect(0, 0, 100, 30), "Menu"))
         {
             _isVisible = !_isVisible;
@@ -25,7 +26,15 @@ public class MainGui : MonoBehaviour
         {
             return;
         }
-        windowRect = GUI.Window(0, windowRect, WindowFunction, "Pause", _skin.window); 
+        windowRect = GUI.Window(0, windowRect, WindowFunction, "Pause", _skin.window);
+
+        GUILayout.BeginArea(new Rect(20, 50, 250, 150));
+
+        _redColorValue = ColorSlider(_redColorValue, "Red");
+        _greenColorValue = ColorSlider(_greenColorValue, "Green");
+        _blueColorValue = ColorSlider(_blueColorValue, "Blue");
+
+        GUILayout.EndArea();
     }
     public void WindowFunction(int windowID)
     {
@@ -37,13 +46,7 @@ public class MainGui : MonoBehaviour
         if (GUI.Button(new Rect(windowRect.width * 0.2f, 150, 220, 50), "Settings"))
             print("Settings");
         if (GUI.Button(new Rect(windowRect.width * 0.2f, 210, 220, 50), "Exit"))
-            print("Exit");
-        _sliderValue = GUI.HorizontalSlider(new Rect(Screen.width * 0.5f - 100, Screen.height * 0.75f - 140, 150, 50), _sliderValue, 0, 10);
-
-
-        _redColorValue = ColorSlider(_redColorValue, "Red");
-        _greenColorValue = ColorSlider(_greenColorValue, "Green");
-        _blueColorValue = ColorSlider(_blueColorValue, "Blue");
+            print("Exit");   
     }
 
     private float ColorSlider(float currentValue, string ColorName)
@@ -60,7 +63,7 @@ public class MainGui : MonoBehaviour
     {
         if (_goRenderer != null)
         {
-            _goRenderer.material.color = new Color(_redColorValue, _blueColorValue, _greenColorValue);
+            _goRenderer.material.color = new Color(_redColorValue / 255f, _blueColorValue / 255f, _greenColorValue / 255f);
         }
     }
 }
