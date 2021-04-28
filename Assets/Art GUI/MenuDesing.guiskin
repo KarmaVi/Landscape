@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 12001, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: MenuDesing
   m_EditorClassIdentifier: 
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 01cd679a1b9ee48bf9c546f6ce2cb97e, type: 3}
   m_box:
     m_Name: box
     m_Normal:
@@ -69,7 +69,7 @@ MonoBehaviour:
       m_Bottom: 0
     m_Font: {fileID: 0}
     m_FontSize: 0
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_Alignment: 1
     m_WordWrap: 0
     m_RichText: 1
@@ -420,19 +420,19 @@ MonoBehaviour:
     m_Normal:
       m_Background: {fileID: 11023, guid: 0000000000000000e000000000000000, type: 0}
       m_ScaledBackgrounds: []
-      m_TextColor: {r: 0.6443147, g: 0.12135102, b: 0.9528302, a: 1}
+      m_TextColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
       m_ScaledBackgrounds: []
-      m_TextColor: {r: 0.68770534, g: 0.10457456, b: 0.8867924, a: 1}
+      m_TextColor: {r: 0.10771608, g: 0.8862745, b: 0.10588237, a: 1}
     m_Active:
       m_Background: {fileID: 0}
       m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_TextColor: {r: 0.07075471, g: 0.5749549, b: 1, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
       m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_TextColor: {r: 0.3144331, g: 0, b: 1, a: 1}
     m_OnNormal:
       m_Background: {fileID: 11022, guid: 0000000000000000e000000000000000, type: 0}
       m_ScaledBackgrounds: []
@@ -440,20 +440,20 @@ MonoBehaviour:
     m_OnHover:
       m_Background: {fileID: 0}
       m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_TextColor: {r: 0.8329566, g: 0.101326115, b: 0.9339623, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
       m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_TextColor: {r: 0, g: 0.8584906, b: 0.850864, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
       m_ScaledBackgrounds: []
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_TextColor: {r: 0.14831792, g: 0.68488604, b: 0.9528302, a: 1}
     m_Border:
-      m_Left: 8
-      m_Right: 8
-      m_Top: 18
-      m_Bottom: 8
+      m_Left: 15
+      m_Right: 15
+      m_Top: 5
+      m_Bottom: 5
     m_Margin:
       m_Left: 0
       m_Right: 0
@@ -461,22 +461,22 @@ MonoBehaviour:
       m_Bottom: 0
     m_Padding:
       m_Left: 10
-      m_Right: 10
-      m_Top: 20
+      m_Right: 0
+      m_Top: 0
       m_Bottom: 10
     m_Overflow:
       m_Left: 0
-      m_Right: 0
-      m_Top: 0
+      m_Right: 15
+      m_Top: 30
       m_Bottom: 0
-    m_Font: {fileID: 12800000, guid: 87c316b602156405d92e616621658222, type: 3}
-    m_FontSize: 45
+    m_Font: {fileID: 12800000, guid: b51a3e520f9164da198dc59c8acfccd6, type: 3}
+    m_FontSize: 30
     m_FontStyle: 1
     m_Alignment: 1
     m_WordWrap: 0
     m_RichText: 1
     m_TextClipping: 1
-    m_ImagePosition: 0
+    m_ImagePosition: 3
     m_ContentOffset: {x: 0, y: -18}
     m_FixedWidth: 0
     m_FixedHeight: 0

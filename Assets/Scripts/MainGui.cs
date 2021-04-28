@@ -5,15 +5,31 @@ using UnityEngine;
 public class MainGui : MonoBehaviour
 {
     [SerializeField] private GUISkin _skin;
-    
-    private Rect windowRect = new Rect (Screen.width * 0.4f, Screen.height * 0.4f, 330, 300);
+    [SerializeField] private Renderer _goRenderer;
+
+    private bool _isVisible = true;
+
+    private float _sliderValue = 0;
+    private float _redColorValue = 0;
+    private float _greenColorValue;
+    private float _blueColorValue = 0;
+    private Rect windowRect = new Rect (Screen.width * 0.33f, Screen.height * 0.3f, 330, 300);
 
     public void OnGUI()
     {
-        windowRect = GUI.Window(0, windowRect, WindowFunction, "Pause"); 
+        if (GUI.Button(new Rect(0, 0, 100, 30), "Menu"))
+        {
+            _isVisible = !_isVisible;
+        }
+        if (!_isVisible)
+        {
+            return;
+        }
+        windowRect = GUI.Window(0, windowRect, WindowFunction, "Pause", _skin.window); 
     }
     public void WindowFunction(int windowID)
     {
+       
         if (GUI.Button(new Rect(windowRect.width * 0.2f, 30, 220, 50), "Continue"))
             print("Continue");
         if (GUI.Button(new Rect(windowRect.width * 0.2f, 90, 220, 50), "Restart"))
@@ -22,5 +38,29 @@ public class MainGui : MonoBehaviour
             print("Settings");
         if (GUI.Button(new Rect(windowRect.width * 0.2f, 210, 220, 50), "Exit"))
             print("Exit");
+        _sliderValue = GUI.HorizontalSlider(new Rect(Screen.width * 0.5f - 100, Screen.height * 0.75f - 140, 150, 50), _sliderValue, 0, 10);
+
+
+        _redColorValue = ColorSlider(_redColorValue, "Red");
+        _greenColorValue = ColorSlider(_greenColorValue, "Green");
+        _blueColorValue = ColorSlider(_blueColorValue, "Blue");
+    }
+
+    private float ColorSlider(float currentValue, string ColorName)
+    {
+        GUILayout.BeginHorizontal();
+        GUILayout.Label(ColorName);
+        currentValue = GUILayout.HorizontalSlider(currentValue, 0, 255);
+        GUILayout.EndHorizontal();
+
+        return currentValue;
+    }
+
+    public void Update()
+    {
+        if (_goRenderer != null)
+        {
+            _goRenderer.material.color = new Color(_redColorValue, _blueColorValue, _greenColorValue);
+        }
     }
 }

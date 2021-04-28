@@ -552,6 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skin: {fileID: 11400000, guid: a9674781b575ce9448f42035c7374398, type: 2}
+  _goRenderer: {fileID: 733388571}
 --- !u!1 &2034787114
 GameObject:
   m_ObjectHideFlags: 0

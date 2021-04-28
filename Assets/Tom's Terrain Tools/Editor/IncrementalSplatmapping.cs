@@ -164,7 +164,7 @@ public class IncrementalSplatmapping : EditorWindow {
 	   // this was posted by petebob as well 
 	   char[] array = text.ToCharArray();
 	   System.Array.Reverse(array);
-      return new string(array);
+	  return new string(array);
 	}
 	public string FindFile(string basename) {
 		string[] extensions = {"tif", "tiff", "png", "jpg", "jpeg"};
