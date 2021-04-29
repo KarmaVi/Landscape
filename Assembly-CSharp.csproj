@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -74,6 +75,10 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\MainGui.cs" />
     <Compile Include="Assets\Scripts\Model\InventoryItem.cs" />
+    <Compile Include="Assets\Scripts\Player\Game\GameMaster.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMovements.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerPosition.cs" />
     <Compile Include="Assets\Scripts\View\InventoryItemViews.cs" />
     <Compile Include="Assets\Scripts\ViewControler\InventoryItemControler.cs" />
     <Compile Include="Assets\Tom's Terrain Tools\2DTools\Scripts\Camera2DFollow.cs" />
@@ -86,7 +91,9 @@
     <Compile Include="Assets\Tom's Terrain Tools\Scripts\TreeExplosion.cs" />
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
     <None Include="Assets\Tom's Terrain Tools\Example Data\Terragen Sources\README.txt" />
+    <None Include="Assets\AurynSky\Gems Ultimate Pack\READ ME.txt" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+    <None Include="Assets\JJ_Oriental Fantasy Character - Berserker Grade 0_v1.1\Readme.txt" />
     <Reference Include="UnityEngine">
       <HintPath>A:/unity/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -13,6 +13,7 @@ public class MainGui : MonoBehaviour
     private float _redColorValue = 0;
     private float _greenColorValue = 0;
     private float _blueColorValue = 0;
+    private float _transparenColortValue = 0;
     private Rect windowRect = new Rect (Screen.width * 0.33f, Screen.height * 0.3f, 330, 300);
 
     public void OnGUI()
@@ -33,6 +34,7 @@ public class MainGui : MonoBehaviour
         _redColorValue = ColorSlider(_redColorValue, "Red");
         _greenColorValue = ColorSlider(_greenColorValue, "Green");
         _blueColorValue = ColorSlider(_blueColorValue, "Blue");
+        _transparenColortValue = ColorSlider(_transparenColortValue, "Transparent");
 
         GUILayout.EndArea();
     }
@@ -63,7 +65,7 @@ public class MainGui : MonoBehaviour
     {
         if (_goRenderer != null)
         {
-            _goRenderer.material.color = new Color(_redColorValue / 255f, _blueColorValue / 255f, _greenColorValue / 255f);
+            _goRenderer.material.color = new Color(_redColorValue / 255f, _blueColorValue / 255f, _greenColorValue / 255f, _transparenColortValue / 255f);
         }
     }
 }
