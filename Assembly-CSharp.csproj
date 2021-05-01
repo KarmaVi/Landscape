@@ -73,6 +73,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\LightSettings.cs" />
     <Compile Include="Assets\Scripts\MainGui.cs" />
     <Compile Include="Assets\Scripts\Model\InventoryItem.cs" />
     <Compile Include="Assets\Scripts\Player\Game\GameMaster.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerMovements.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerPosition.cs" />
     <Compile Include="Assets\Scripts\View\InventoryItemViews.cs" />
+    <Compile Include="Assets\Scripts\ViewControler\InventoryControler.cs" />
     <Compile Include="Assets\Scripts\ViewControler\InventoryItemControler.cs" />
     <Compile Include="Assets\Tom's Terrain Tools\2DTools\Scripts\Camera2DFollow.cs" />
     <Compile Include="Assets\Tom's Terrain Tools\2DTools\Scripts\CircleMoverSample.cs" />

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 3
   Name: "\u0428\u043E\u0442\u0433\u0430\u043D"
-  Texture: {fileID: 2800000, guid: 5485e2f56028a3c4cb54f5caa167377e, type: 3}
+  Texture: {fileID: 2800000, guid: b49708b59b8d83d40abc9e2297eb8a23, type: 3}
   Category: 2
