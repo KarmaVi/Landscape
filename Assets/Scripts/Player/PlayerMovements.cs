@@ -46,7 +46,7 @@ public class PlayerMovements : MonoBehaviour
     //public GameObject LeverRotation;
     //Transform rotate;
 
-    void Awake()
+    public void Awake()
     {
         //Анимация
         anim = GetComponent<Animator>();
@@ -61,10 +61,10 @@ public class PlayerMovements : MonoBehaviour
         //controller.Move(Vector3.down * 0.01f);
     }
 
-    void Update()
+    public void Update()
     {
-        if (!(health > 0))
-            return;
+        //if (!(health > 0))
+        //    return;
 
         if (inputEnabled)
         {
