@@ -77,9 +77,8 @@
     <Compile Include="Assets\Scripts\MainGui.cs" />
     <Compile Include="Assets\Scripts\Model\InventoryItem.cs" />
     <Compile Include="Assets\Scripts\Player\Game\GameMaster.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerMovements.cs" />
     <Compile Include="Assets\Scripts\Player\WarriorController.cs" />
+    <Compile Include="Assets\Scripts\Player\WarriorMovements.cs" />
     <Compile Include="Assets\Scripts\View\InventoryItemViews.cs" />
     <Compile Include="Assets\Scripts\ViewControler\InventoryControler.cs" />
     <Compile Include="Assets\Scripts\ViewControler\InventoryItemControler.cs" />

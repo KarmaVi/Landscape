@@ -9,7 +9,6 @@ public class MainGui : MonoBehaviour
 
     private bool _isVisible = true;
 
-    private float _sliderValue = 0;
     private float _redColorValue = 0;
     private float _greenColorValue = 0;
     private float _blueColorValue = 0;
